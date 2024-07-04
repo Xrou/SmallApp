@@ -1,0 +1,14 @@
+﻿<Window x:Class="DesktopSolution.CommentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopSolution"
+        mc:Ignorable="d"
+        Title="CommentWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <Grid Height="54" Width="342">
+        <TextBox HorizontalAlignment="Left" Margin="10,10,0,10" TextWrapping="Wrap" Text="{Binding Comment.Text}" Width="293"/>
+        <Button Command="{Binding OkCommand}" Content="Ок" HorizontalAlignment="Left" Margin="308,0,0,0" VerticalAlignment="Center" Width="24"/>
+
+    </Grid>
+</Window>
